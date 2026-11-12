@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bol, de winkel van ons allemaal. Kies uit miljoenen artikelen. Snel en veelal gratis verzonden!">
+    <title>De winkel van ons allemaal | bol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav aria-label="Hoofdnavigatie">
+        <div class="nav-top">
+            <div class="nav-top-general">
+                <a>
+                    <p><span class="bold">Gratis</span> verzending vanaf 250,-</p>
+                </a>
+                <a>
+                    <p>Bezorging binnen 15 minuten, 's avonds of in het weekend</p>
+                </a>
+                <a>
+                    <p><span class="bold">Gratis</span> retourneren van 13:00 tot 13:05 op dinsdagen</p>
+                </a>
+            </div>
+            <div class="nav-top-select">
+                <a>
+                    <p><span class="select">Select</span> Ontdek nu de 312 voordelen</p>
+                </a>
+            </div>
+        </div>
+        <div class="nav-main">
+            <svg id="logo" role="img" aria-label="bol" viewBox="0 0 1134 445">
+                <path fill="currentColor" d="M602.208 334.405C642.677 334.405 670.541 307.407 670.541 268.835C670.541 230.264 642.677 203.264 602.208 203.264C561.737 203.264 533.873 230.264 533.873 268.835C533.873 307.407 561.737 334.405 602.208 334.405ZM602.208 93.3373C745.403 93.3373 800.136 186.551 800.136 268.835C800.136 358.835 737.129 444.333 603.48 444.333C460.285 444.333 404.279 351.763 404.279 268.835C404.279 181.407 463.467 93.3373 602.208 93.3373Z"></path>
+                <path fill="currentColor" d="M826.429 0.00528719H955.889V438.429H826.429V0.00528719Z"></path>
+                <path fill="currentColor" d="M1133.86 365.353C1133.86 321.733 1098.5 286.372 1054.88 286.372C1011.26 286.372 975.897 321.733 975.897 365.353C975.897 408.972 1011.26 444.333 1054.88 444.333C1098.5 444.333 1133.86 408.972 1133.86 365.353Z"></path>
+                <path fill="currentColor" d="M129.459 329.649C146.852 332.903 166.191 334.288 179.073 334.288C226.097 334.288 257.017 308.408 257.017 268.717C257.017 229.677 226.741 203.147 182.939 203.147C166.835 203.147 147.496 205.372 129.459 211.228V329.649ZM0 0.00528719H129.459V107.361C154.916 97.7186 181.197 93.2186 208.564 93.2186C310.392 93.2186 384.217 167.789 384.217 270.003C384.217 347.144 331.393 438.429 211.109 438.429H0V0.00528719Z"></path>
+            </svg>
+            <div class="search-bar">
+                <input type="search" class="search-field" placeholder="Waar ben je naar op zoek?" name="q" aria-label="Zoeken naar artikelen"/>
+                <button type="button" class="search-button" aria-label="Zoeken">
+                    <svg aria-hidden="true" class="search-icon" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <line x1="17" y1="17" x2="22" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="user-buttons">
+                <a class="profile-button">
+                    <div class="welcome-message">
+                        <p>Welkom</p>
+                        <p><span class="bold">Kevin</span></p>
+                    </div>
+                    <div class="profile-icon">
+                        <img src="icons/profile.svg" alt="Mijn profiel" width="24" height="24"/>
+                    </div>
+                </a>
+                <a class="wishlist-button">
+                    <div class="wishlist-icon">
+                        <img src="icons/wishlist.svg" alt="Verlanglijst" width="24" height="24"/>
+                    </div>
+                </a>
+                <a class="cart-button">
+                    <div class="cart-icon">
+                        <img src="icons/cart.svg" alt="Winkelwagen" width="24" height="24"/>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="nav-bottom">
+            <div class="drop-down-menus">
+                <button type="button" class="drop-down" id="categories-menu">
+                    <span>Categorieën</span>
+                    <svg aria-hidden="true" class="drop-down-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" fill-rule="evenodd" d="M5.293 8.793a1 1 0 0 1 1.414 0L12 14.086l5.293-5.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6a1 1 0 0 1 0-1.414" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <button type="button" class="drop-down" id="presents-menu">
+                    <span>Cadeaus &amp; Inspiratie</span>
+                    <svg aria-hidden="true" class="drop-down-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" fill-rule="evenodd" d="M5.293 8.793a1 1 0 0 1 1.414 0L12 14.086l5.293-5.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6a1 1 0 0 1 0-1.414" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <button type="button" class="drop-down" id="discounts-menu">
+                    <span>Aanbiedingen</span>
+                    <svg aria-hidden="true" class="drop-down-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" fill-rule="evenodd" d="M5.293 8.793a1 1 0 0 1 1.414 0L12 14.086l5.293-5.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6a1 1 0 0 1 0-1.414" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="quick-links">
+                <a>
+                    <p>Zakelijk</p>
+                </a>
+                <a>
+                    <p>Cadeaukaart</p>
+                </a>
+                <a>
+                    <p>Bestelstatus</p>
+                </a>
+                <a>
+                    <p>Klantenservice</p>
+                </a>
+                <a class="language-button">
+                    <div class="flag-NL">
+                        <div class="flag-stripe" id="red-stripe"></div>
+                        <div class="flag-stripe" id="white-stripe"></div>
+                        <div class="flag-stripe" id="blue-stripe"></div>
+                    </div>
+                    <p>NL</p>
+                    <svg aria-hidden="true" class="drop-down-icon" viewBox="0 0 24 24" width="16" height="16">
+                        <path fill="currentColor" fill-rule="evenodd" d="M5.293 8.793a1 1 0 0 1 1.414 0L12 14.086l5.293-5.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6a1 1 0 0 1 0-1.414" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <section class="hero-main" aria-labelledby="deals-title">
+            <div class="hero-bubbles" aria-hidden="true">
+                <span class="bubble">50%</span>
+                <span class="bubble">60%</span>
+                <span class="bubble">70%</span>
+                <span class="bubble">80%</span>
+                <span class="bubble">90%</span>
+            </div>
+            <div class="hero-text">
+                <h1 id="deals-title">De beste deals</h1>
+                <div class="hero-subtitle">
+                    <p>alleen voor studenten van</p>
+                    <img class="avans-logo" src="images/Avans_Hogeschool_Logo.svg" alt="Avans Hogeschool"/>
+                </div>
+            </div>
+            <button type="button" class="hero-button">
+                Bekijk nu
+            </button>
+        </section>
+        <div class="hero-carousel">
+            <div class="carousel-item">
+                <div class="carousel-tile" id="tile-1">
+                    <h2>Tot 60% korting*</h2>
+                    <p class="carousel-subtitle">op laptops</p>
+                </div>
+                <p>*op de meest getoonde prijs</p>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-tile" id="tile-2">
+                    <h2>Tot 70% korting*</h2>
+                    <p class="carousel-subtitle">op computer accessoires</p>
+                </div>
+                <p>*op de meest getoonde prijs</p>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-tile" id="tile-3">
+                    <h2>Tot 80% korting*</h2>
+                    <p class="carousel-subtitle">op MacBooks</p>
+                </div>
+                <p>*op de meest getoonde prijs</p>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-tile" id="tile-4">
+                    <h2>Tot 90% korting*</h2>
+                    <p class="carousel-subtitle">op studentenkleding</p>
+                </div>
+                <p>*op de meest getoonde prijs</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="for-you" aria-labelledby="topdeals-title">
+            <h2 id="topdeals-title">Topdeals <span class="subtitle">voor jou</span></h2>
+            <div class="for-you-list">
+                <div class="for-you-item">
+                    <div class="for-you-thumbnail">
+                        <img src="images/optimized/headphones.png" alt="Zwarte koptelefoon"/>
+                        <button type="button" class="add-wishlist" aria-label="Koptelefoon toevoegen aan verlanglijst">
+                            <span class="wishlist-icon">
+                                <img src="icons/wishlist.svg" alt="" width="24" height="24"/>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="for-you-description">
+                        <h3>Koptelefoon</h3>
+                        <div class="price discount">
+                            <p class="price-amount">89,99</p>
+                        </div>
+                        <p class="discount-label">in prijs verlaagd</p>
+                        <p>Meestal <span class="price-reduced">90,00</span></p>
+                    </div>
+                </div>
+                <div class="for-you-item">
+                    <div class="for-you-thumbnail">
+                        <img src="images/optimized/creme.png" alt="Tube handcrème"/>
+                        <button type="button" class="add-wishlist" aria-label="Handcrème toevoegen aan verlanglijst">
+                            <span class="wishlist-icon">
+                                <img src="icons/wishlist.svg" alt="" width="24" height="24"/>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="for-you-description">
+                        <h3>Handcrème</h3>
+                        <div class="price">
+                            <p class="price-amount">19,99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="for-you-item">
+                    <div class="for-you-thumbnail">
+                        <img src="images/optimized/handbag.png" alt="Oranje handtas"/>
+                        <button type="button" class="add-wishlist" aria-label="Oranje Handtas toevoegen aan verlanglijst">
+                            <span class="wishlist-icon">
+                                <img src="icons/wishlist.svg" alt="" width="24" height="24"/>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="for-you-description">
+                        <h3>Oranje Handtas</h3>
+                        <div class="price discount">
+                            <p class="price-amount">14,59</p>
+                        </div>
+                        <p class="discount-label">Combinatiekorting</p>
+                    </div>
+                </div>
+                <div class="for-you-item">
+                    <div class="for-you-thumbnail">
+                        <img src="images/optimized/airpods.png" alt="Witte draadloze oortjes"/>
+                        <button type="button" class="add-wishlist" aria-label="Wireless Earphones toevoegen aan verlanglijst">
+                            <span class="wishlist-icon">
+                                <img src="icons/wishlist.svg" alt="" width="24" height="24"/>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="for-you-description">
+                        <h3>Wireless Earphones</h3>
+                        <div class="price discount">
+                            <p class="price-amount">29,99</p>
+                        </div>
+                        <p class="discount-label">in prijs verlaagd</p>
+                        <p>Meestal <span class="price-reduced">40,00</span></p>
+                    </div>
+                </div>
+                <div class="for-you-item">
+                    <div class="for-you-thumbnail">
+                        <img src="images/optimized/diffuser.png" alt="Geurverspreider"/>
+                        <button type="button" class="add-wishlist" aria-label="Diffuser toevoegen aan verlanglijst">
+                            <span class="wishlist-icon">
+                                <img src="icons/wishlist.svg" alt="" width="24" height="24"/>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="for-you-description">
+                        <h3>Diffuser</h3>
+                        <div class="price">
+                            <p class="price-amount">59,19</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="for-you-item">
+                    <div class="for-you-thumbnail">
+                        <img src="images/optimized/perfume.png" alt="Parfumfles"/>
+                        <button type="button" class="add-wishlist" aria-label="Parfum toevoegen aan verlanglijst">
+                            <span class="wishlist-icon">
+                                <img src="icons/wishlist.svg" alt="" width="24" height="24"/>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="for-you-description">
+                        <h3>Parfum</h3>
+                        <div class="price discount">
+                            <p class="price-amount">79,09</p>
+                        </div>
+                        <p class="discount-label">in prijs verlaagd</p>
+                        <p>Meestal <span class="price-reduced">2500,00</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
